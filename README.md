@@ -1,0 +1,1 @@
+# XOR-and-XNOR-Gates---Theory-Truth-Tables
