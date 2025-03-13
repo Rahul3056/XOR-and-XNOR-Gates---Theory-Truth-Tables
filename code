@@ -1,0 +1,31 @@
+module logic_gates (
+    input wire A, B,
+    output wire XOR_out,
+    output wire XNOR_out
+);
+
+// Logic gate implementations
+assign XOR_out = A ^ B;    // XOR Gate
+assign XNOR_out = ~(A ^ B); // XNOR Gate
+
+endmodule
+
+// Testbench
+module testbench;
+    reg A, B;
+    wire XOR_out, XNOR_out;
+
+    logic_gates uut (.A(A), .B(B), .XOR_out(XOR_out), .XNOR_out(XNOR_out));
+
+    initial begin
+        $monitor("A=%b B=%b | XOR=%b XNOR=%b", A, B, XOR_out, XNOR_out);
+
+        // Test cases
+        A = 0; B = 0; #10;
+        A = 0; B = 1; #10;
+        A = 1; B = 0; #10;
+        A = 1; B = 1; #10;
+
+        $finish;
+    end
+endmodule
