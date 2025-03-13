@@ -1,4 +1,4 @@
-**Day 3: XOR and XNOR Gates - Theory & Truth Tables**
+ XOR and XNOR Gates - Theory & Truth Tables**
 
 ### Concept Overview
 XOR (Exclusive OR) and XNOR (Exclusive NOR) are special logic gates used for parity checking, error detection, and data comparison in digital systems.
